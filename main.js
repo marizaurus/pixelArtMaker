@@ -576,7 +576,7 @@ for (let i = 0; i < instruments.length; i++) {
 }
 
 function setCursor(cursor) {
-  canvas.style = `cursor: url("../img/${cursor}.png"), auto;`;
+  canvas.style = `cursor: url("img/${cursor}.png"), auto;`;
   if (document.getElementsByClassName('instr-active')[0])
     document.getElementsByClassName('instr-active')[0].classList.toggle('instr-active');
 }
