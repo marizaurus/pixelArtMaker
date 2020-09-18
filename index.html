@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Maker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="plate canvas-header">
+      <div class="canvas-title">Pixel Art Maker 1.0</div>
+      <div class="canvas-options">
+      </div>
+    </div>
+    <div class="canvas-tabs">
+      <div class="tabs-section section-drawings">
+        <div class="tab tab-drawing tab-active">
+          <div class="tab-name">new</div>
+          <div class="tab-cross">&#10006;</div>
+        </div>
+      </div>
+      <div class="tabs-section">
+        <div class="tab tab-option rename"><img src="img/pencil-big.svg" alt="rename" class="instr-tab"></div>
+        <div class="tab tab-option load"><img src="img/load.svg" alt="load" class="instr-tab"></div>
+        <div class="tab tab-option save"><img src="img/save.svg" alt="save" class="instr-tab"></div>
+        <div class="tab tab-option new"><img src="img/new.svg" alt="new" class="instr-tab"></div>
+        <div class="tab tab-option clear"><img src="img/delete.svg" alt="clear" class="instr-tab"></div>
+      </div>
+    </div>
+    <div class="plate canvas-body">
+      <div class="canvas-palette">
+        <div class="palette-select">
+          <div class="palette-title">Choose Palette:</div>
+          <form>
+            <div class="select">
+              <div class="select-title" data-default="Classic">
+                <div class="title-name">Classic</div>
+                <div class="title-icon">&#10095;</div>
+              </div>
+              <div class="select-content">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="colors-row">
+          <!--colors shown here-->
+        </div>
+        <div class="instruments">
+          <div class="instr pencil">
+            <img src="img/pencil-big.svg" alt="pencil" class="instr-img">
+          </div>
+          <div class="instr eraser">
+            <img src="img/eraser-big.svg" alt="eraser" class="instr-img">
+          </div>
+          <div class="instr brush">
+            <img src="img/brush-big.svg" alt="brush" class="instr-img">
+          </div>
+          <div class="instr clear instr-single">
+            <img src="img/clear-big.svg" alt="clear" class="instr-img">
+          </div>
+          <div class="instr preview instr-mode">
+            <img src="img/eye.svg" alt="preview" class="instr-img">
+          </div>
+          <div class="instr undo instr-single instr-history">
+            <img src="img/undo.svg" alt="undo" class="instr-img">
+          </div>
+          <div class="instr redo instr-single instr-history">
+            <img src="img/redo.svg" alt="redo" class="instr-img">
+          </div>
+        </div>
+        <div class="color-chosen">
+          <div class="color-info">Current:</div>
+          <div class="color-block"></div>
+        </div>
+        <div class="color-chosen">
+          <div class="color-info">Custom:</span></div>
+          <div class="custom-color color-block">
+            <input type="color" value="#123123" id="color-picker">
+          </div>
+        </div>
+        <div class="color-chosen">
+          <div class="color-info">Recent:</span></div>
+          <div class="colors-recent">
+            <div class="color color-recent" data-color="white"></div>
+            <div class="color color-recent" data-color="white"></div>
+            <div class="color color-recent" data-color="white"></div>
+            <div class="color color-recent" data-color="white"></div>
+            <div class="color color-recent" data-color="white"></div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="canvas">
+        <!-- .canvas-row*20>.pixel*20[style=background:white] -->
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <!-- modal content here -->
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
